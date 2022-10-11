@@ -1,12 +1,15 @@
 import React from 'react';
-import { useLoaderData } from 'react-router-dom';
-import Header from '../Header.js/Header';
+import { Link, useLoaderData } from 'react-router-dom';
+
 import Subject from '../Subject/Subject';
 
 const Home = () => {
     const topics = useLoaderData();
     const subjects = topics.data;
-    const handleQuesButton = (id) => console.log(id);
+
+    // const handleQuesButton = (id) => {
+    //     <Link to={`/home/ques/${id}`} ></Link>
+    // }
     
     return (
         <div>
@@ -14,7 +17,7 @@ const Home = () => {
                 subjects.map(subject => <Subject
                 key={subject.id}
                 subject = {subject}
-                handleQuesButton = {handleQuesButton}
+               
                 ></Subject>)
              }
         </div>

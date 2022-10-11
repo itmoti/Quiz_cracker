@@ -1,0 +1,12 @@
+/* div {
+    background-color: black;
+} */
+nav {
+    display: flex;
+    justify-content: space-between;
+   margin : 0 5% 0 5%;
+   background-color: black
+   ;
+   color: white;
+
+}
