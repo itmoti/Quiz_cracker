@@ -6,12 +6,13 @@ const Ques = ({ques , id}) => {
     const idMain = id +1 ;
     const {question , options } = ques;
     console.log(ques)
-    const quesSplited = question.split(`/[ques.length - 3]/`)
-    console.log(quesSplited)
+    const quesSplited = question.split('<p>');
+    const quesSplited2 = quesSplited[1].split('</p>')
+   const quesClean = quesSplited2[0];
     return (
         <div className='question'>
            
-           <h6> {idMain} . {question}</h6>
+           <h6> {idMain} . {quesClean}</h6>
             <p>{options.map(option => <QuesOptions 
                       option = {option}
             

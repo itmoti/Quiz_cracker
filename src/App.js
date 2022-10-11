@@ -8,6 +8,7 @@ import Blog from './Components/Blog/Blog';
 import About from './Components/About/About';
 import QuesByTopic from './Components/QuesByTopic/QuesByTopic';
 import ErrorPage from './Components/ErrorPage/ErrorPage';
+import Statics from './Components/Statics/Statics';
 
 
 
@@ -30,7 +31,7 @@ function App() {
             element : <Home></Home>
           },
           {
-            path : 'statics' , element : <></>
+            path : 'statics' , element :<Statics></Statics>
           },
           {
             path : '/blog' , element : <Blog></Blog>
