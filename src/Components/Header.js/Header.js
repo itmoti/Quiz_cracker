@@ -10,7 +10,7 @@ const Header = () => {
                 <section><h2>
                 Ques Bank
                     </h2></section>
-                <section>
+                <section classname ='navLinkDiv'>
                 <Link to='home'>Home</Link>
                 <Link to='statics'>Statics</Link>
                 <Link to='blog'>Blog</Link>
