@@ -1,12 +1,39 @@
-/* div {
+.navigation {
     background-color: black;
-} */
+}
 nav {
     display: flex;
     justify-content: space-between;
-   margin : 0 5% 0 5%;
-   background-color: black
-   ;
+   margin : 0 5% 30px 5%;
+  
+   
    color: white;
+   align-items: center;
+   height: 100px;
 
+
+}
+nav a {
+    text-decoration: none;
+    color : white ;
+    margin-left : 15px ;
+    font-size: 20px ;
+}
+
+nav a:hover {
+    color : green
+}
+
+@media screen and (max-width : 768px) {
+    nav {
+        display: flex;
+        justify-content: space-between;
+       margin : 0 5% 30px 5%;
+      
+       
+       color: white;
+       align-items: center;
+       height: 100px;
+    }
+    
 }

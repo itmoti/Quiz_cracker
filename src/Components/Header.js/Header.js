@@ -5,7 +5,8 @@ import './Header.css'
 const Header = () => {
     return (
         <div>
-            <nav >
+           <div  className='navigation '>
+           <nav >
                 <section><h2>
                 Ques Bank
                     </h2></section>
@@ -16,6 +17,7 @@ const Header = () => {
                 <Link to ='about'>About</Link>
                 </section>
             </nav>
+           </div>
         </div>
     );
 };
