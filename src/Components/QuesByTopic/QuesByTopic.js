@@ -5,7 +5,7 @@ import Ques from '../Ques/Ques';
 const QuesByTopic = () => {
     const quesGroupFetch = useLoaderData();
      const quesGroup = quesGroupFetch.data.questions;
-     console.log(quesGroup)
+   
   
     return (
         <div>

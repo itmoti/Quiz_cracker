@@ -1,16 +1,22 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import './Subject.css'
 
-const Subject = ({subject , handleQuesButton}) => {
+const Subject = ({subject  }) => {
     const {name , logo , total , id } = subject
     return (
-        <div>
+        <div className='topic'>
           <img src={logo} alt='' />
-          <h3>{name}   <br /><br /> <p>Total : {total}</p></h3>
-          {/* <button onClick={()=>handleQuesButton(id)} >Go To Topics</button> */}
-          <button>
-            <Link to = {`/home/ques/${id}`} >Go To Ques</Link>
-          </button>
+          <div  className='topic-details'>
+           <div className="topic-names">
+           <h4>Name : {name}   </h4> <p>Total : {total}</p>
+           </div>
+          
+            <Link className='btn' to = {`/home/ques/${id}`} >Go To Ques</Link>
+        
+          </div>
+          
+        
         </div>
     );
 };
