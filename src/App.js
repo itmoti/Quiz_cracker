@@ -6,6 +6,8 @@ import Main from './Layout/Main';
 import Home from './Components/Home/Home';
 import Blog from './Components/Blog/Blog';
 import About from './Components/About/About';
+import QuesByTopic from './Components/QuesByTopic/QuesByTopic';
+
 
 
 
@@ -31,11 +33,23 @@ function App() {
           }, 
           {
             path : '/about' , element : <About></About>
+          },
+          {
+            path : '/home/ques/:id' ,
+            
+            loader : async({params}) => {
+              return fetch(`https://openapi.programming-hero.com/api/quiz/${params.id}`)
+            }
+             , element : <QuesByTopic></QuesByTopic> 
           }
         ]
       }
     ]
   )
+
+ 
+
+
   return (
     <div className="App">
     <RouterProvider router={router}></RouterProvider>

@@ -6,6 +6,7 @@ import Subject from '../Subject/Subject';
 const Home = () => {
     const topics = useLoaderData();
     const subjects = topics.data;
+    const handleQuesButton = (id) => console.log(id);
     
     return (
         <div>
@@ -13,6 +14,7 @@ const Home = () => {
                 subjects.map(subject => <Subject
                 key={subject.id}
                 subject = {subject}
+                handleQuesButton = {handleQuesButton}
                 ></Subject>)
              }
         </div>
