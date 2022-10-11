@@ -1,0 +1,43 @@
+.details {
+    width: 50%;
+    margin : auto;
+    margin-bottom: 50px;
+    margin-top: 30px;
+}
+.topics {
+    margin-bottom: 30px;
+}
+.topicsContainer {
+    display: grid;
+    grid-template-columns: repeat(4 , 1fr);
+    border: 2px;
+    gap: 20px;
+}
+.topicsContainer img {
+    width: 200px;
+}
+
+code {
+    color : black;
+    text-align: left;
+}
+
+
+@media screen and (max-width :767px) {
+    .topicsContainer {
+        display: grid;
+        grid-template-columns: 1fr;
+        border: 2px;
+        gap: 20px;
+    }
+}
+
+@media  (min-width : 767px ) and (max-width : 1024px ){
+    .topicsContainer {
+        display: grid;
+        grid-template-columns: repeat(2 , 1fr) ;
+        border: 2px;
+     
+    }
+
+}

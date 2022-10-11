@@ -4,8 +4,8 @@
 nav {
     display: flex;
     justify-content: space-between;
-   margin : 0 5% 30px 5%;
-  
+   /* margin : 0 5% 30px 5%; */
+  padding:  0 5% 30px 5%;;
    
    color: white;
    align-items: center;
