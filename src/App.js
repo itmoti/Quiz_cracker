@@ -7,6 +7,7 @@ import Home from './Components/Home/Home';
 import Blog from './Components/Blog/Blog';
 import About from './Components/About/About';
 import QuesByTopic from './Components/QuesByTopic/QuesByTopic';
+import ErrorPage from './Components/ErrorPage/ErrorPage';
 
 
 
@@ -46,6 +47,9 @@ function App() {
              , element : <QuesByTopic></QuesByTopic> 
           }
         ]
+      }, 
+      {
+        path: '*' , element : <ErrorPage></ErrorPage>
       }
     ]
   )
