@@ -3,6 +3,7 @@
    border : 1px solid blue ;
    border-radius: 10px;
    height: 100%;
+   position: relative;
    
 }
 .options {
@@ -10,4 +11,13 @@
    grid-template-columns: 1fr 1fr;
    color : green;
    font-size: 20px;
+}
+.correctAnsBtn{
+   position: absolute;
+   right: 4px;
+ 
+}
+.correctAnsBtn button {
+   border : 1px solid black;
+   border-radius: 15px;
 }

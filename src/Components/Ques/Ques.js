@@ -1,6 +1,12 @@
 import React from 'react';
+import toast, { Toaster } from 'react-hot-toast';
 import QuesOptions from '../QuesOptions/QuesOptions';
 import './Ques.css'
+
+import { AiFillEye } from 'react-icons/ai';
+
+
+
 
 const Ques = ({ques , id}) => {
     const idMain = id +1 ;
@@ -9,23 +15,35 @@ const Ques = ({ques , id}) => {
     const quesSplited = question.split('<p>');
     const quesSplited2 = quesSplited[1].split('</p>')
    const quesClean = quesSplited2[0];
-//    console.log(ques.correctAnswer);
+
 const correctAns = ques.correctAnswer;
    const optionHandleBtn = (option) => {
     if(correctAns === option) {
-        alert('you are right')
+        toast('you are right')
      }
      else {
-        alert('you are wrong')
+        toast('you are wrong')
      }
 }
+const correctAnsBtn = (correctAns) => {
+    toast(correctAns)
+}
     return (
+        
         <div className='question'>
+
+<div><Toaster/></div>
            
-           <h6> {idMain} . {quesClean}</h6>
+           <h6> {idMain} . {quesClean}   <div className='correctAnsBtn'> 
+           <button  onClick={() => correctAnsBtn((correctAns))}><AiFillEye/></button>
+           </div></h6>
+          
+            
+
             <p className='options'>{options.map(option => <QuesOptions 
                       option = {option}
-                      optionHandleBtn ={optionHandleBtn}
+                      optionHandleBtn = {optionHandleBtn}
+                    
             
             >            </QuesOptions>)} </p>
           

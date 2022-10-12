@@ -1,11 +1,11 @@
-import logo from './logo.svg';
+
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Main from './Layout/Main';
 import Home from './Components/Home/Home';
 import Blog from './Components/Blog/Blog';
-import About from './Components/About/About';
+
 import QuesByTopic from './Components/QuesByTopic/QuesByTopic';
 import ErrorPage from './Components/ErrorPage/ErrorPage';
 import Statics from './Components/Statics/Statics';
@@ -31,14 +31,14 @@ function App() {
             element : <Home></Home>
           },
           {
-            path : 'statics' , element :<Statics></Statics>
+            path : 'statics' ,
+            loader : async() => fetch('https://openapi.programming-hero.com/api/quiz') , 
+            element :<Statics></Statics>
           },
           {
             path : '/blog' , element : <Blog></Blog>
           }, 
-          {
-            path : '/about' , element : <About></About>
-          },
+         
           {
             path : '/home/ques/:id' ,
             

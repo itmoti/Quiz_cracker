@@ -5,9 +5,13 @@ const QuesOptions = ({option , optionHandleBtn}) => {
    
   
     return (
-        <p className='option' onClick={() => optionHandleBtn(option) }>
+       <div>
+         <p className='option' onClick={() => optionHandleBtn(option) }>
             {option}
         </p>
+          
+       </div>
+      
     );
 };
 

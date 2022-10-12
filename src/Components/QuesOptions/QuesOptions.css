@@ -1,4 +1,16 @@
 .option {
     display: grid;
    grid-template-columns: 1fr 1fr;
+   border : 1px solid pink;
+   height: 100%;
+   width: 100%;
+   text-align: center   ;
+   font-size: 13px;
+}
+.option:hover {
+    background-color:green;
+    color : white;
+}
+.option:active{
+    background-color: blue;
 }
