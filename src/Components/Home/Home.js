@@ -8,11 +8,13 @@ const Home = () => {
     const topics = useLoaderData();
     const subjects = topics.data;
 
-    
+   
     
     return (
-        <div>
+        <div >
+            <div className="details-container">
             <div className="details">
+                <img className='details-img' src='https://image.shutterstock.com/image-illustration/question-mark-front-color-wall-600w-1709365627.jpg' alt='' ></img>
             <h4>Ques Bank is mainly created for the Next Generation Coders.
                 Coders can test there knowledge by answering simply questions.They Can Master Code.
             </h4>
@@ -27,6 +29,7 @@ const Home = () => {
             </ol>
             </div>
             </code>
+            </div>
             </div>
             <hr></hr>
            <div>

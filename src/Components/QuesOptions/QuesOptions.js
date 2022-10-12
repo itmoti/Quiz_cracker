@@ -1,8 +1,11 @@
 import React from 'react';
+import './QuesOptions.css'
 
-const QuesOptions = ({option}) => {
+const QuesOptions = ({option , optionHandleBtn}) => {
+   
+  
     return (
-        <p>
+        <p className='option' onClick={() => optionHandleBtn(option) }>
             {option}
         </p>
     );

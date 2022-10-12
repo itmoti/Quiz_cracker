@@ -1,8 +1,13 @@
+.details img {
+    width: 200px;
+}
+
 .details {
     width: 50%;
     margin : auto;
     margin-bottom: 50px;
     margin-top: 30px;
+   
 }
 .topics {
     margin-bottom: 30px;
@@ -18,7 +23,7 @@
 }
 
 code {
-    color : black;
+    color : white;
     text-align: left;
 }
 
